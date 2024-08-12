@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Button from './class-components'
+import { Calculator2 } from './calculator'
+import { EventData2 } from './event-data'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h2><center>react-class-comp-arrow-function</center></h2>
+      <Button />
+      <h2><center>react-func-comp-passing-argument-to-event-handling</center></h2>
+      <Calculator2 />
+      <h2><center>react-func-comp-checking-event-data program</center></h2>
+      <EventData2 />
+    </>
+  )
 }
-
-export default App;
